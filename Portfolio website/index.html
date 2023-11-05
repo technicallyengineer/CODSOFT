@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Portfolio</title>
+    <link href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #54920767;
+        color: #24023ac2;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 6px;
+      }   
+      
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: #201f23;
+        color: #ffffff;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23%;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: #dbf804;
+        font-size: 1.04rem;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 45px 0;
+      }
+
+      .firstSection > div {
+        width: 30%;
+        color: black;
+        /* background-color: red; */
+      }
+
+      .leftSection {
+        font-size: 3rem;
+        margin: 35px 0;
+      }
+
+      .leftSection .animated-text {
+        opacity: 0;
+      }
+
+      @keyframes fadeIn {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+      }
+
+      .leftSection .animated-text {
+        animation: fadeIn 1s ease-in-out forwards;
+        animation-delay: 0.5s;
+      }
+
+      .rightSection img {
+        width: 70%;
+        margin: 28px 50px;
+      }
+
+      .personal_name {
+        display: inline;
+        color: rgb(255, 255, 255);
+      }
+
+      #element{
+        color: white;
+      }
+
+      .secondSection h1{
+
+        text-align: center;
+        font-size: x-large;
+        margin: 23px 0;
+
+      }
+     
+      main hr{
+
+        background-color: #201f23;
+        border: 0;
+        height: 2px;
+
+      }
+
+      .row {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally. */
+    margin: 5rem auto; /* Adjust the top and center margin. */
+}
+
+.column {
+    width: 20%; /* Adjust the width of the columns as needed. */
+    margin: 0 50px; /* Increase or decrease the left and right margin to control the gap between columns. */
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 10px
+}
+
+
+
+      .links{
+        display: flex;
+        margin: -101px 9rem;
+        position: relative;
+      }
+
+      .links img {
+    
+        padding: 0 2rem 130px 0;
+        width: 70px;
+        transition: opacity 0.3s; 
+      }
+
+      .git:hover img{
+          opacity: 0.7;
+      }
+
+      .fb:hover img{
+          opacity: 0.7;
+      }
+
+      .ln:hover img{
+          opacity: 0.7;
+      }
+
+      .card:hover{
+        background-color: white;
+        color: black;
+      }
+
+      .grey{
+        text-align: justify;
+        color: rgb(250, 225, 3);
+        margin: 20px 0;
+      }
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Shubham's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div class="animated-text">Hi, I am <span class="personal_name">Shubham</span></div>
+          <div class="animated-text">Pursuing B.E in Electronics and Telecommunication</div>
+          <div class="animated-text">I wanna be </div>
+          <div class="animated-text"><span id="element"></span></div>  
+        </div>
+        <div class="rightSection">
+          <img src="elec.png" alt="Error loading" />
+        </div>
+      </section>
+      <div class="links">
+        <a href="https://github.com" class="git" ><img src="github.png" alt="GitHub"></a>
+        <a href="https://facebook.com" class="fb"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://linkedin.com" class="ln"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
+
+      <section class="secondSection">
+        <hr>
+        <h1>Projects</h1>
+        <div class="row">
+          <div class="column"><div class="card">
+            <h2>Electrical Wire Fault Detection</h2>
+            <div class="grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque aliquid voluptate incidunt, doloremque asperiores eius vero pariatur libero, accusantium quam esse, saepe perferendis officia ipsum repellat magnam ducimus. Ducimus libero quasi debitis quod molestiae.</div>
+          </div></div>
+          <div class="column"><div class="card">
+            <h2>Smart Helmet using Raspberrypi</h2>
+            <div class="grey">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime blanditiis ullam, autem ea dolor quidem, voluptas enim suscipit porro itaque laborum facere optio aliquid veritatis corrupti perspiciatis fuga! Praesentium asperiores beatae nulla magni culpa.</div>
+          </div></div>
+          <div class="column"><div class="card">
+            <h2>Self Driving car using Opencv</h2>
+            <div class="grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, a. Ipsam doloremque quis adipisci ex, quae hic tempore beatae, expedita inventore, placeat tempora deserunt dignissimos nulla nam facere aspernatur repudiandae at saepe consectetur voluptate.</div>
+          </div></div>
+        </div>
+      </section>
+    </main>
+    
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Embedded System Engineer', 'AI/ML Engineer'],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
+  </body>
+</html>

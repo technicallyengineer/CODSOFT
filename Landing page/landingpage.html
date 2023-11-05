@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unique Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: linear-gradient(to right, #42275a, #734b6d);
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap; /* Wrap to the next line */
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header-content {
+        text-align: center;
+      }
+
+      .header-content h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      .header-content p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-weight: 300;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #e53935;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        text-transform: uppercase;
+      }
+
+      .cta-button:hover {
+        background-color: #c62828;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .section {
+        padding: 40px 0;
+      }
+
+      .section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+
+      .section p {
+        font-size: 18px;
+        margin-bottom: 30px;
+        font-weight: 300;
+      }
+
+      .about-us {
+        flex-basis: 100%; /* Full width for "About Us" */
+      }
+
+      .card {
+        background-color: #fff;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px 0;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+
+      .footer {
+        background: linear-gradient(to right, #42275a, #734b6d);
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .social-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .social-icon {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .social-icon:hover {
+        color: #e53935;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <h1>Welcome to Our Unique Landing Page</h1>
+          <p>Your Journey Starts Here</p>
+          <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <!-- <a href="#" class "social-icon"><i class="fab fa-twitter"></i></a> -->
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="section about-us">
+        <h2>About Us</h2>
+        <p>
+          We are passionate about creating unique solutions that inspire and
+          engage people. Your success is our mission.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Our Services</h2>
+        <div class="card">
+          <img src="image1.jpg" alt="Service 1" />
+        </div>
+        <div class="card">
+          <img src="image3.jpeg" alt="Service 2" />
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Our Portfolio</h2>
+        <div class="card">
+          <h3>Project A</h3>
+          <p>
+            Take a look at our amazing Project A. It showcases our creativity
+            and dedication to delivering outstanding results.
+          </p>
+          <img src="portfolio1.jpg" alt="Project A" />
+        </div>
+        <div class="card">
+          <h3>Project B</h3>
+          <p>
+            Project B is a testament to our expertise. It's a perfect blend of
+            innovation and quality that exceeded our client's expectations.
+          </p>
+          <img src="portfolio2.jpg" alt="Project B" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy; 2023 Unique Company. All rights reserved.
+    </footer>
+  </body>
+</html>
